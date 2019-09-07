@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ProductService.Contracts;
 
 namespace ProductService.Controllers
 {
@@ -27,7 +28,7 @@ namespace ProductService.Controllers
 
         // POST: api/ProductSearch
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] SearchQuery searchQuery)
         {
         }
 
