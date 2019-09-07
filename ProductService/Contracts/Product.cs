@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 
 namespace ProductService.Contracts
 {
-    public class SearchQuery
+    public class Product
     {
+        public int id { get; set; }
+        public int Price { get; set; }
+
         public string Name { get; set; }
 
-        public int? MinPrice { get; set; }
-        public int? MaxPrice { get; set; }
+        public string Description { get; set; }
     }
 }
